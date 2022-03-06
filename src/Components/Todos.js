@@ -4,7 +4,7 @@ import TodoItem from './TodoItem'
 export default function Todos(props) {
   return (
     <div className='container my-3'>
-            <h2 className='text-center'>ToDo List</h2>
+            <h3>ToDo List</h3>
             <div className='container'>
             { props.items.length !== 0 ?
                 props.items.map( (item) => {

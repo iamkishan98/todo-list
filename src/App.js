@@ -3,8 +3,8 @@ import './App.css';
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Todos from './Components/Todos'
+import {Addtodo} from './Components/Addtodo'
 import React,{useState} from 'react'
-
 function App() {
   let appName = "TODO-LIST"
   const [Items,setItems] = useState([
@@ -35,9 +35,11 @@ function App() {
 
   }
 
+
   return (
     <>
     <Header title={appName} searchBar ={false} />
+    <Addtodo items={Items} setItems = {setItems}/>
     <Todos items={Items} onDelete={onDelete} />
     <Footer />
     </>
