@@ -39,7 +39,7 @@ function App() {
   return (
     <>
     <Header title={appName} searchBar ={false} />
-    <Addtodo items={Items} setItems = {setItems}/>
+    <Addtodo items={Items} />
     <Todos items={Items} onDelete={onDelete} />
     <Footer />
     </>
